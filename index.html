@@ -10,6 +10,7 @@
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <style>
     body {
@@ -117,6 +118,26 @@
     </div>
   </header>
 
+  <!-- Swiper Slider -->
+<div class="container my-4">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img src="https://amd.sgvp.org/wp-content/uploads/sites/2/2024/11/1920-x-900_Admission-Open_241124-2.jpg" alt="Admission Open" class="img-fluid rounded">
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/1350x500.png?text=Welcome+to+Gurukul" alt="Welcome" class="img-fluid rounded">
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/1350x500.png?text=Traditional+Education" alt="Traditional" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="container my-5">
     <div class="card flex-row">
       <div class="ratio ratio-16x9" style="flex: 1 1 60%;">
@@ -169,5 +190,17 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- Swiper Initialization -->
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+  });
+</script>
 </body>
 </html>
